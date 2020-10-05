@@ -12,7 +12,7 @@ Docker container based on [cimg-node](https://github.com/CircleCI-Public/cimg-no
 
 Is as simple as running:
 
-`npm run generate <node_version>`:
+`npm run generate <node_version>` inside `shared` folder:
 
 * single dockerfile: `npm run generate 12.18`
 * multiple dockerfiles: `npm run generate 10.22,12.18,14.13`
