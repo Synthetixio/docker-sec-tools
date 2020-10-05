@@ -33,14 +33,14 @@ jobs:
         with:
           registry: ghcr.io
           username: synthetixio
-          password: ${{ secrets.CR_PAT }}
+          password: ${{ secrets.GH_PAT }}
 
       - name: Login to GitHub Packages
         uses: docker/login-action@v1 
         with:
           registry: docker.pkg.github.com
           username: synthetixio
-          password: ${{ secrets.CR_PAT }}
+          password: ${{ secrets.GH_PAT }}
 
       - name: Build and push
         uses: docker/build-push-action@v2
