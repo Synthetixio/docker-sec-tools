@@ -1,0 +1,5 @@
+FROM cimg/node:%%TAG%%
+
+RUN npm install --prefix="$HOME"/.local -g audit-ci@%%AUDIT_CI_VERSION%% lockfile-lint@%%LOCKFILE_LINT_VERSION%%
+
+RUN curl -LO https://storage.googleapis.com/container-diff/v%%CONTAINER_DIFF_VERSION%%/container-diff-linux-amd64 && chmod +x container-diff-linux-amd64 && mv container-diff-linux-amd64 "$HOME"/.local/bin/container-diff

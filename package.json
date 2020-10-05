@@ -1,21 +1,34 @@
 {
-	"version": "1.0.0",
-	"private": true,
-	"description": "",
-	"main": "index.js",
-	"dependencies": {},
-	"devDependencies": {
-		"eslint": "7.1.0",
-		"eslint-config-prettier": "6.11.0",
-		"eslint-plugin-import": "2.20.2",
-		"eslint-plugin-prettier": "3.1.3",
-		"prettier": "2.0.5"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint .",
-		"format": "prettier --write '**/*.js' '**/*.md'"
-	},
-	"author": "Synthetix",
-	"license": "MIT"
+  "version": "1.0.0",
+  "private": true,
+  "description": "Docker contained based on cimg-node with security-oriented tools included.",
+  "main": "generate.js",
+  "dependencies": {
+    "dockerfile-template": "0.2.0",
+    "minimist": "1.2.5"
+  },
+  "devDependencies": {
+    "eslint": "7.10.0",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.1.2"
+  },
+  "scripts": {
+    "generate": "node generate.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write '**/*.js' '**/*.md'"
+  },
+  "author": "Synthetix",
+  "license": "MIT",
+  "name": "docker-sec-tools",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Synthetixio/docker-sec-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Synthetixio/docker-sec-tools/issues"
+  },
+  "homepage": "https://github.com/Synthetixio/docker-sec-tools#readme"
 }
