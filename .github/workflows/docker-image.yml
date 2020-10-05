@@ -14,11 +14,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Lint
-        uses: drptbl/hadolint-action@master
-        with:
-          dockerfile: ./${{ matrix.node }}/Dockerfile
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
