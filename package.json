@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "private": true,
-  "description": "Docker contained based on cimg-node with security-oriented tools included.",
+  "description": "Docker container based on cimg-node with security-oriented tools included.",
   "main": "generate.js",
   "dependencies": {
     "dockerfile-template": "0.2.0",
