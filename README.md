@@ -2,7 +2,7 @@
 
 ## Description
 
-Docker container based on [cimg-node](https://github.com/CircleCI-Public/cimg-node) with following security tools included:
+Docker container based on [docker-node](https://github.com/Synthetixio/docker-node) with following security tools included:
 
 * [audit-ci](https://www.npmjs.com/package/audit-ci)
 * [lockfile-lint](https://www.npmjs.com/package/lockfile-lint)
