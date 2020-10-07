@@ -33,7 +33,7 @@ jobs:
         with:
           registry: ghcr.io
           username: synthetixio
-          password: ${{ secrets.CR_PAT }}
+          password: ${{ secrets.GH_PACKAGES_READ_WRITE }}
 
       - name: Build and push
         uses: docker/build-push-action@v2
