@@ -1,4 +1,4 @@
-FROM cimg/node:%%TAG%%
+FROM ghcr.io/synthetixio/docker-node/base:%%TAG%%
 
 RUN npm install --prefix="$HOME"/.local -g audit-ci@%%AUDIT_CI_VERSION%% lockfile-lint@%%LOCKFILE_LINT_VERSION%%
 
