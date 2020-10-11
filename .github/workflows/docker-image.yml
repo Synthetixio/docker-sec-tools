@@ -50,6 +50,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/synthetixio/${{ github.event.repository.name }}/base:${{ matrix.node }}
+            synthetixio/${{ github.event.repository.name }}:${{ matrix.node }}
 
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
