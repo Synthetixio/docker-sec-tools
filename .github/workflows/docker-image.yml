@@ -42,7 +42,7 @@ jobs:
           password: ${{ secrets.GH_PACKAGES_READ_WRITE }}
 
       - name: Build and push
-        uses: docker/build-push-action@6925f94b6b8f23d547930f88b9886036ac92d510 # pin@v2
+        uses: docker/build-push-action@9379083e426e2e84abb80c8c091f5cdeb7d3fd7a # pin@v2
         with:
           context: .
           file: ./${{ matrix.node }}/Dockerfile
