@@ -8,7 +8,7 @@ jobs:
   build_and_push:
     strategy:
       matrix:
-        node: [ 10.23, '12.20', 12.21 ]
+        node: [ '10.24', '12.21', '14.16', '15.11' ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

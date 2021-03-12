@@ -1,4 +1,4 @@
-FROM ghcr.io/synthetixio/docker-node/alpine:10.23
+FROM ghcr.io/synthetixio/docker-node/alpine:15.11
 
 RUN npm install -g lockfile-lint@4.6.2 audit-ci@3.1.1 auditjs@4.0.24
 
