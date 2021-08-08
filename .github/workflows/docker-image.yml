@@ -3,12 +3,18 @@ name: Docker Image CI
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'output/**'
+      - 'templates/**'
+      - config.json
+      - '.github/workflows/build-image.yml'
 
 jobs:
   build_and_push:
     strategy:
       matrix:
-        node: [ '10.24', '10.24-npm6', '12.22', '12.22-npm6', '14.17', '15.11' ]
+        node: [ '12.22', '14.17', '16.6']
+        distro: [ alpine, debian, ubuntu ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -41,16 +47,15 @@ jobs:
           username: synthetixio
           password: ${{ secrets.GH_PACKAGES_READ_WRITE }}
 
-      - name: Build and push
+      - name: Build and push (${{ matrix.distro }}[${{ matrix.node }}])
         uses: docker/build-push-action@1bc1040caef9e604eb543693ba89b5bf4fc80935 # pin@v2
         with:
           context: .
-          file: ./${{ matrix.node }}/Dockerfile
-          platforms: linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x
+          file: ./output/${{ matrix.distro }}/${{ matrix.node }}/Dockerfile
+          platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/synthetixio/${{ github.event.repository.name }}/base:${{ matrix.node }}
-            synthetixio/${{ github.event.repository.name }}:${{ matrix.node }}
-
+            ghcr.io/synthetixio/${{ github.event.repository.name }}/${{ matrix.distro }}:${{ matrix.node }}
+            synthetixio/${{ github.event.repository.name }}:${{ matrix.node }}-${{ matrix.distro }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
