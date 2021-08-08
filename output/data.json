@@ -1,0 +1,110 @@
+[
+  {
+    "distro": "alpine",
+    "nodeVersion": "12.22",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/alpine/12.22/Dockerfile"
+  },
+  {
+    "distro": "alpine",
+    "nodeVersion": "14.17",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/alpine/14.17/Dockerfile"
+  },
+  {
+    "distro": "alpine",
+    "nodeVersion": "16.6",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/alpine/16.6/Dockerfile"
+  },
+  {
+    "distro": "ubuntu",
+    "nodeVersion": "12.22",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/ubuntu/12.22/Dockerfile"
+  },
+  {
+    "distro": "ubuntu",
+    "nodeVersion": "14.17",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/ubuntu/14.17/Dockerfile"
+  },
+  {
+    "distro": "ubuntu",
+    "nodeVersion": "16.6",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/ubuntu/16.6/Dockerfile"
+  },
+  {
+    "distro": "debian",
+    "nodeVersion": "12.22",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/debian/12.22/Dockerfile"
+  },
+  {
+    "distro": "debian",
+    "nodeVersion": "14.17",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/debian/14.17/Dockerfile"
+  },
+  {
+    "distro": "debian",
+    "nodeVersion": "16.6",
+    "alpineVersion": 3.12,
+    "ubuntuVersion": "focal",
+    "debianVersion": "stable-slim",
+    "lockfilelintVersion": "4.6.2",
+    "auditCiVersion": "4.1.0",
+    "auditJsVersion": "4.0.29",
+    "containerDiffVersion": "0.17.0",
+    "file": "../output/debian/16.6/Dockerfile"
+  }
+]
