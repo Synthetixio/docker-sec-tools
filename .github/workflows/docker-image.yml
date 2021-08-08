@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - 'output/**'
+      - '.github/workflows/docker-image.yml'
 
 jobs:
   build_and_push:
