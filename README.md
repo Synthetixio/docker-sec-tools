@@ -8,11 +8,15 @@ Docker container based on [docker-node](https://github.com/Synthetixio/docker-no
 * [lockfile-lint](https://www.npmjs.com/package/lockfile-lint)
 * [container-diff](https://github.com/GoogleContainerTools/container-diff)
 
+## Updating versions
+
+Take a look at [config.json](https://github.com/Synthetixio/docker-node/blob/master/config.json) file.
+
 ## Generating dockerfiles
 
 Is as simple as running:
 
-`npm run generate <node_version>` inside `shared` folder:
+1. `cd shared`
+2. `npm install`
+3. `npm run generate`
 
-* single dockerfile: `npm run generate 12.18`
-* multiple dockerfiles: `npm run generate 10.22,12.18,14.13`
