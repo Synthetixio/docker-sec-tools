@@ -6,6 +6,6 @@
   "debianVersion": "stable-slim",
   "lockfilelintVersion": "4.6.2",
   "auditCiVersion": "4.1.0",
-  "auditJsVersion": "4.0.29",
+  "auditJsVersion": "4.0.30",
   "containerDiffVersion": "0.17.0"
 }
