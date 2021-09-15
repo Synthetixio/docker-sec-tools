@@ -8,4 +8,23 @@ FROM ghcr.io/synthetixio/docker-node/{{ distro }}:{{ nodeVersion }}
 
 RUN npm install -g lockfile-lint@{{ lockfilelintVersion }} audit-ci@{{ auditCiVersion }} auditjs@{{ auditJsVersion }}
 
-RUN curl -LO https://storage.googleapis.com/container-diff/v{{ containerDiffVersion }}/container-diff-linux-amd64 && chmod +x container-diff-linux-amd64 && mv container-diff-linux-amd64 /usr/local/bin/container-diff
+RUN curl -LO https://storage.googleapis.com/container-diff/v{{ containerDiffVersion }}/container-diff-linux-amd64 \
+    && chmod +x container-diff-linux-amd64 \
+    && mv container-diff-linux-amd64 /usr/local/bin/container-diff
+
+RUN curl https://keybase.io/codecovsecurity/pgp_keys.asc | gpg --no-default-keyring --keyring trustedkeys.gpg --import \
+{%- if distro === "alpine" %}
+    && curl -Os https://uploader.codecov.io/v{{ codecovVersion }}/alpine/codecov \
+    && curl -Os https://uploader.codecov.io/v{{ codecovVersion }}/alpine/codecov.SHA256SUM \
+    && curl -Os https://uploader.codecov.io/v{{ codecovVersion }}/alpine/codecov.SHA256SUM.sig \
+    && gpgv codecov.SHA256SUM.sig codecov.SHA256SUM \
+    && sha256sum -c codecov.SHA256SUM \
+{%- elif distro === "ubuntu" or distro === "debian" %}
+    && curl -Os https://uploader.codecov.io/v{{ codecovVersion }}/linux/codecov \
+    && curl -Os https://uploader.codecov.io/v{{ codecovVersion }}/linux/codecov.SHA256SUM \
+    && curl -Os https://uploader.codecov.io/v{{ codecovVersion }}/linux/codecov.SHA256SUM.sig \
+    && gpgv codecov.SHA256SUM.sig codecov.SHA256SUM \
+    && shasum -a 256 -c codecov.SHA256SUM \
+{%- endif %}
+    && chmod +x codecov \
+    && mv codecov /usr/local/bin/codecov
