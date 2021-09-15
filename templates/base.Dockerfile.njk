@@ -6,7 +6,7 @@ FROM ghcr.io/synthetixio/docker-node/{{ distro }}:{{ nodeVersion }}
 FROM ghcr.io/synthetixio/docker-node/{{ distro }}:{{ nodeVersion }}
 {%- endif %}
 
-RUN npm install -g lockfile-lint@{{ lockfilelintVersion }} audit-ci@{{ auditCiVersion }} auditjs@{{ auditJsVersion }}
+RUN npm install -g lockfile-lint@{{ lockfilelintVersion }} audit-ci@{{ auditCiVersion }} auditjs@{{ auditJsVersion }} @codechecks/client@{{ codechecksVersion }}
 
 RUN curl -LO https://storage.googleapis.com/container-diff/v{{ containerDiffVersion }}/container-diff-linux-amd64 \
     && chmod +x container-diff-linux-amd64 \
