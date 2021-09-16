@@ -8,5 +8,6 @@
   "auditCiVersion": "4.1.0",
   "auditJsVersion": "4.0.30",
   "containerDiffVersion": "0.17.0",
-  "codecovVersion": "0.1.0_8880"
+  "codecovVersion": "0.1.0_8880",
+  "codechecksVersion": "0.1.10"
 }
