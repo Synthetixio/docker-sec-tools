@@ -7,8 +7,7 @@ FROM ghcr.io/synthetixio/docker-node/{{ distro }}:{{ nodeVersion }}
 {%- endif %}
 
 {%- if distro === "ubuntu" or distro === "debian" %}
-# install slither
-RUN pip3 install --user slither-analyzer
+RUN python3 -m pip install slither-analyzer=={{ slitherVersion }}
 {%- endif %}
 
 RUN npm install -g lockfile-lint@{{ lockfilelintVersion }} audit-ci@{{ auditCiVersion }} auditjs@{{ auditJsVersion }}
