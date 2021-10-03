@@ -6,6 +6,11 @@ FROM ghcr.io/synthetixio/docker-node/{{ distro }}:{{ nodeVersion }}
 FROM ghcr.io/synthetixio/docker-node/{{ distro }}:{{ nodeVersion }}
 {%- endif %}
 
+{%- if distro === "ubuntu" or distro === "debian" %}
+# install slither
+RUN pip3 install --user slither-analyzer
+{%- endif %}
+
 RUN npm install -g lockfile-lint@{{ lockfilelintVersion }} audit-ci@{{ auditCiVersion }} auditjs@{{ auditJsVersion }}
 
 RUN curl -LO https://storage.googleapis.com/container-diff/v{{ containerDiffVersion }}/container-diff-linux-amd64 \

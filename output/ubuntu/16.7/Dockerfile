@@ -1,5 +1,7 @@
 
 FROM ghcr.io/synthetixio/docker-node/ubuntu:16.7
+# install slither
+RUN pip3 install --user slither-analyzer
 
 RUN npm install -g lockfile-lint@4.6.2 audit-ci@4.1.0 auditjs@4.0.30
 
