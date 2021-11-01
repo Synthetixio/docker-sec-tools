@@ -2,17 +2,17 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
     paths:
-      - 'output/**'
-      - '.github/workflows/docker-image.yml'
+      - "output/**"
+      - ".github/workflows/docker-image.yml"
 
 jobs:
   build_and_push:
     strategy:
       matrix:
-        node: [ '12.22', '14.18', '16.11']
-        distro: [ alpine, debian, ubuntu ]
+        node: ["12.22", "14.18", "16.13", "17.0"]
+        distro: [alpine, debian, ubuntu]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
