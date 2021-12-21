@@ -1,6 +1,6 @@
 {
   "distro": ["alpine", "ubuntu", "debian"],
-  "nodeVersion": ["12.22", "14.18", "16.13", "17.2"],
+  "nodeVersion": ["12.22", "14.18", "16.13", "17.3"],
   "alpineVersion": 3.12,
   "ubuntuVersion": "focal",
   "debianVersion": "stable-slim",
