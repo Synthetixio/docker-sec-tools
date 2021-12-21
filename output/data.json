@@ -43,7 +43,7 @@
   },
   {
     "distro": "alpine",
-    "nodeVersion": "17.2",
+    "nodeVersion": "17.3",
     "alpineVersion": 3.12,
     "ubuntuVersion": "focal",
     "debianVersion": "stable-slim",
@@ -53,7 +53,7 @@
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
     "slitherVersion": "0.8.1",
-    "file": "../output/alpine/17.2/Dockerfile"
+    "file": "../output/alpine/17.3/Dockerfile"
   },
   {
     "distro": "ubuntu",
@@ -99,7 +99,7 @@
   },
   {
     "distro": "ubuntu",
-    "nodeVersion": "17.2",
+    "nodeVersion": "17.3",
     "alpineVersion": 3.12,
     "ubuntuVersion": "focal",
     "debianVersion": "stable-slim",
@@ -109,7 +109,7 @@
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
     "slitherVersion": "0.8.1",
-    "file": "../output/ubuntu/17.2/Dockerfile"
+    "file": "../output/ubuntu/17.3/Dockerfile"
   },
   {
     "distro": "debian",
@@ -155,7 +155,7 @@
   },
   {
     "distro": "debian",
-    "nodeVersion": "17.2",
+    "nodeVersion": "17.3",
     "alpineVersion": 3.12,
     "ubuntuVersion": "focal",
     "debianVersion": "stable-slim",
@@ -165,6 +165,6 @@
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
     "slitherVersion": "0.8.1",
-    "file": "../output/debian/17.2/Dockerfile"
+    "file": "../output/debian/17.3/Dockerfile"
   }
 ]
