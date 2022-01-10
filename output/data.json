@@ -10,7 +10,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/alpine/12.22/Dockerfile"
   },
   {
@@ -24,7 +24,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/alpine/14.18/Dockerfile"
   },
   {
@@ -38,7 +38,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/alpine/16.13/Dockerfile"
   },
   {
@@ -52,7 +52,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/alpine/17.3/Dockerfile"
   },
   {
@@ -66,7 +66,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/ubuntu/12.22/Dockerfile"
   },
   {
@@ -80,7 +80,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/ubuntu/14.18/Dockerfile"
   },
   {
@@ -94,7 +94,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/ubuntu/16.13/Dockerfile"
   },
   {
@@ -108,7 +108,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/ubuntu/17.3/Dockerfile"
   },
   {
@@ -122,7 +122,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/debian/12.22/Dockerfile"
   },
   {
@@ -136,7 +136,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/debian/14.18/Dockerfile"
   },
   {
@@ -150,7 +150,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/debian/16.13/Dockerfile"
   },
   {
@@ -164,7 +164,7 @@
     "auditJsVersion": "4.0.33",
     "containerDiffVersion": "0.17.0",
     "codecovVersion": "0.1.9",
-    "slitherVersion": "0.8.1",
+    "slitherVersion": "0.8.2",
     "file": "../output/debian/17.3/Dockerfile"
   }
 ]
