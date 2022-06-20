@@ -1,13 +1,13 @@
 {
   "distro": ["alpine", "ubuntu", "debian"],
-  "nodeVersion": ["12.22", "14.19", "16.14", "17.8"],
+  "nodeVersion": ["14.19", "16.15", "18.4"],
   "alpineVersion": 3.12,
   "ubuntuVersion": "focal",
   "debianVersion": "stable-slim",
-  "lockfilelintVersion": "4.7.4",
-  "auditCiVersion": "6.1.2",
-  "auditJsVersion": "4.0.36",
+  "lockfilelintVersion": "4.7.5",
+  "auditCiVersion": "6.3.0",
+  "auditJsVersion": "4.0.37",
   "containerDiffVersion": "0.17.0",
-  "codecovVersion": "0.1.20",
-  "slitherVersion": "0.8.2"
+  "codecovVersion": "0.2.4",
+  "slitherVersion": "0.8.3"
 }
