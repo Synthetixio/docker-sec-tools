@@ -16,16 +16,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@ee5a9d1395988d7c82c67c69571871f5994b94df # pin@v2
+        uses: actions/checkout@61b9e3751b92087fd0b06925ba6dd6314e06f089 # pin@v2
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@8b122486cedac8393e77aa9734c3528886e4a1a8 # pin@v1
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@dc7b9719a96d48369863986a06765841d7ea23f6 # pin@v1
+        uses: docker/setup-buildx-action@8c0edbc76e98fa90f69d9a2c020dcb50019dc325 # pin@v1
 
       - name: Cache Docker layers
-        uses: actions/cache@3b70782066bd817837b6bd8c518d45b54d91bf76 # pin@v2
+        uses: actions/cache@515d10b4fd9bb4858066bd5769f55bd498dcdd27 # pin@v2
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-${{ matrix.node }}-buildx-${{ github.sha }}
@@ -33,20 +33,20 @@ jobs:
             ${{ runner.os }}-${{ matrix.node }}-buildx-
 
       - name: Login to DockerHub
-        uses: docker/login-action@49ed152c8eca782a232dede0303416e8f356c37b # pin@v1
+        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a # pin@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@49ed152c8eca782a232dede0303416e8f356c37b # pin@v1
+        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a # pin@v1
         with:
           registry: ghcr.io
           username: synthetixio
           password: ${{ secrets.GH_PACKAGES_READ_WRITE }}
 
       - name: Build and push (${{ matrix.distro }}[${{ matrix.node }}])
-        uses: docker/build-push-action@e551b19e49efd4e98792db7592c17c09b89db8d8 # pin@v2
+        uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5 # pin@v2
         with:
           context: .
           file: ./output/${{ matrix.distro }}/${{ matrix.node }}/Dockerfile
