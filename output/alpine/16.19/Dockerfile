@@ -1,7 +1,7 @@
 
 FROM ghcr.io/synthetixio/docker-node/alpine:16.19
 
-RUN npm install -g lockfile-lint@4.9.6 audit-ci@6.4.1 auditjs@4.0.39
+RUN npm install -g lockfile-lint@4.10.0 audit-ci@6.6.1 auditjs@4.0.39
 
 RUN curl -LO https://storage.googleapis.com/container-diff/v0.17.0/container-diff-linux-amd64 \
     && chmod +x container-diff-linux-amd64 \

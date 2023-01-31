@@ -1,10 +1,10 @@
 {
   "distro": ["alpine", "ubuntu", "debian"],
-  "nodeVersion": ["14.21", "16.19", "18.12"],
-  "lockfilelintVersion": "4.9.6",
-  "auditCiVersion": "6.4.1",
+  "nodeVersion": ["14.21", "16.19", "18.13"],
+  "lockfilelintVersion": "4.10.0",
+  "auditCiVersion": "6.6.1",
   "auditJsVersion": "4.0.39",
   "containerDiffVersion": "0.17.0",
   "codecovVersion": "0.3.2",
-  "slitherVersion": "0.9.1"
+  "slitherVersion": "0.9.2"
 }
