@@ -50,7 +50,7 @@ jobs:
         with:
           context: .
           file: ./output/${{ matrix.distro }}/${{ matrix.node }}/Dockerfile
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: |
             ghcr.io/synthetixio/${{ github.event.repository.name }}/${{ matrix.distro }}:${{ matrix.node }}
