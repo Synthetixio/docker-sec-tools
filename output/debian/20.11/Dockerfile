@@ -2,7 +2,7 @@
 FROM ghcr.io/synthetixio/docker-node/debian:20.11
 RUN python3 -m pip install slither-analyzer==0.10.0
 
-RUN npm install -g lockfile-lint@4.12.1 audit-ci@6.6.1 auditjs@4.0.45
+RUN npm install -g lockfile-lint@4.12.1 audit-ci@6.6.1
 
 RUN curl -LO https://storage.googleapis.com/container-diff/v0.17.0/container-diff-linux-amd64 \
     && chmod +x container-diff-linux-amd64 \

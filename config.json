@@ -3,7 +3,6 @@
   "nodeVersion": ["18.19", "20.11"],
   "lockfilelintVersion": "4.12.1",
   "auditCiVersion": "6.6.1",
-  "auditJsVersion": "4.0.45",
   "containerDiffVersion": "0.17.0",
   "codecovVersion": "0.7.1",
   "slitherVersion": "0.10.0"
