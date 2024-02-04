@@ -1,101 +1,68 @@
 [
   {
     "distro": "alpine",
-    "nodeVersion": "16.20",
-    "lockfilelintVersion": "4.10.1",
+    "nodeVersion": "18.19",
+    "lockfilelintVersion": "4.12.1",
     "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
+    "auditJsVersion": "4.0.45",
     "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/alpine/16.20/Dockerfile"
+    "codecovVersion": "0.7.1",
+    "slitherVersion": "0.10.0",
+    "file": "../output/alpine/18.19/Dockerfile"
   },
   {
     "distro": "alpine",
-    "nodeVersion": "18.16",
-    "lockfilelintVersion": "4.10.1",
+    "nodeVersion": "20.11",
+    "lockfilelintVersion": "4.12.1",
     "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
+    "auditJsVersion": "4.0.45",
     "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/alpine/18.16/Dockerfile"
-  },
-  {
-    "distro": "alpine",
-    "nodeVersion": "20.0",
-    "lockfilelintVersion": "4.10.1",
-    "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
-    "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/alpine/20.0/Dockerfile"
+    "codecovVersion": "0.7.1",
+    "slitherVersion": "0.10.0",
+    "file": "../output/alpine/20.11/Dockerfile"
   },
   {
     "distro": "ubuntu",
-    "nodeVersion": "16.20",
-    "lockfilelintVersion": "4.10.1",
+    "nodeVersion": "18.19",
+    "lockfilelintVersion": "4.12.1",
     "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
+    "auditJsVersion": "4.0.45",
     "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/ubuntu/16.20/Dockerfile"
+    "codecovVersion": "0.7.1",
+    "slitherVersion": "0.10.0",
+    "file": "../output/ubuntu/18.19/Dockerfile"
   },
   {
     "distro": "ubuntu",
-    "nodeVersion": "18.16",
-    "lockfilelintVersion": "4.10.1",
+    "nodeVersion": "20.11",
+    "lockfilelintVersion": "4.12.1",
     "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
+    "auditJsVersion": "4.0.45",
     "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/ubuntu/18.16/Dockerfile"
-  },
-  {
-    "distro": "ubuntu",
-    "nodeVersion": "20.0",
-    "lockfilelintVersion": "4.10.1",
-    "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
-    "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/ubuntu/20.0/Dockerfile"
+    "codecovVersion": "0.7.1",
+    "slitherVersion": "0.10.0",
+    "file": "../output/ubuntu/20.11/Dockerfile"
   },
   {
     "distro": "debian",
-    "nodeVersion": "16.20",
-    "lockfilelintVersion": "4.10.1",
+    "nodeVersion": "18.19",
+    "lockfilelintVersion": "4.12.1",
     "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
+    "auditJsVersion": "4.0.45",
     "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/debian/16.20/Dockerfile"
+    "codecovVersion": "0.7.1",
+    "slitherVersion": "0.10.0",
+    "file": "../output/debian/18.19/Dockerfile"
   },
   {
     "distro": "debian",
-    "nodeVersion": "18.16",
-    "lockfilelintVersion": "4.10.1",
+    "nodeVersion": "20.11",
+    "lockfilelintVersion": "4.12.1",
     "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
+    "auditJsVersion": "4.0.45",
     "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/debian/18.16/Dockerfile"
-  },
-  {
-    "distro": "debian",
-    "nodeVersion": "20.0",
-    "lockfilelintVersion": "4.10.1",
-    "auditCiVersion": "6.6.1",
-    "auditJsVersion": "4.0.39",
-    "containerDiffVersion": "0.17.0",
-    "codecovVersion": "0.5.0",
-    "slitherVersion": "0.9.3",
-    "file": "../output/debian/20.0/Dockerfile"
+    "codecovVersion": "0.7.1",
+    "slitherVersion": "0.10.0",
+    "file": "../output/debian/20.11/Dockerfile"
   }
 ]
