@@ -1,6 +1,6 @@
 {
   "distro": ["alpine", "ubuntu", "debian"],
-  "nodeVersion": ["18.19", "20.11"],
+  "nodeVersion": ["18.20", "20.12"],
   "lockfilelintVersion": "4.12.1",
   "auditCiVersion": "6.6.1",
   "containerDiffVersion": "0.17.0",

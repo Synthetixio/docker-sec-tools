@@ -1,5 +1,5 @@
 
-FROM ghcr.io/synthetixio/docker-node/debian:18.19
+FROM ghcr.io/synthetixio/docker-node/debian:18.20
 RUN python3 -m pip install slither-analyzer==0.10.0
 
 RUN npm install -g lockfile-lint@4.12.1 audit-ci@6.6.1
